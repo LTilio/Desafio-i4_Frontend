@@ -1,0 +1,48 @@
+.footer {
+    background-color: var(--color-gainsboro);
+    color: var(--color-grey11);
+    padding: 20px 0;
+    text-align: center;
+    background: linear-gradient(to bottom,
+            var(--color-gainsboro),
+            var(--color-medium-aquamarine));
+}
+
+.footer-dev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-dev i {
+    color: var(--color-dark-green);
+}
+
+.footer-dev p {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: monospace;
+    color: var(--color-grey11);
+    margin: 0 0 0 0;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.social-link {
+    margin: 0 20px;
+    color: var(--color-gainsboro);
+    text-decoration: none;
+}
+
+.social-link i {
+    transition: color 0.3s ease;
+}
+
+.footer-social-media i {
+    font-size: 2rem;
+}
