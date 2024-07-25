@@ -1,5 +1,10 @@
-import React from "react";
+import PetCard from "../components/PetCard/PetCard";
+import { Container } from "react-bootstrap";
 
 export default function Home() {
-  return <div>PAGINA PRINCIPAL ONDE VAI TES O GETALL NOS PETS</div>;
+  return (
+    <Container>
+      <PetCard />
+    </Container>
+  );
 }

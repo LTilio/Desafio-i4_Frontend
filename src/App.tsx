@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar/NavBar";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
+import PetProfile from "./pages/PetProfile";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/profile/:petId" element={<PetProfile />} />
           </Routes>
         </main>
         <Footer />
