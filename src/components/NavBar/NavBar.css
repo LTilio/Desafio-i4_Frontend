@@ -1,0 +1,50 @@
+.custom-navbar {
+    height: 150px;
+    background: linear-gradient(to top,
+            var(--color-gainsboro),
+            var(--color-medium-aquamarine));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.logo-img {
+    height: 60px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.logo-img:hover {
+    transform: scale(1.05);
+}
+
+.navbar-brand {
+    color: var(--color-gainsboro);
+}
+
+.navbar-brand .btn {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    color: var(--color-medium-aquamarine);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn-primary {
+    margin-bottom: 30px;
+    background-color: var(--color-medium-aquamarine);
+    border: 2px solid var(--color-medium-aquamarine);
+    color: var(--color-gainsboro);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    border-color: var(--color-dark-green);
+    color: var(--color-dark-green);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}

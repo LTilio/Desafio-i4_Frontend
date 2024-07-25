@@ -1,0 +1,14 @@
+:root {
+    --color-gainsboro: #fff;
+    --color-grey11: #1C1C1C;
+    --color-medium-aquamarine: #66CDAA;
+    --color-dark-green: #4AB59A;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-gainsboro);
+    color: var(--color-grey11);
+    margin: 0;
+    padding: 0;
+}
