@@ -1,30 +1,63 @@
-# React + TypeScript + Vite
+<h1 align="center">Desafio i4 - Gerenciamento de Consultas Veterinárias</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📝 Índice
+<ul>
+  <li><a href="#sobre-o-projeto">Sobre o projeto</a></li>
+  <li><a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a></li>
+  <li><a href="#endpoints">Endpoints</a></li>
+  <li><a href="#autor-do-projeto">Autor do projeto</a></li>
+</ul>
 
-Currently, two official plugins are available:
+## :desktop_computer: Sobre o projeto
+O objetivo deste desafio é construir uma aplicação full-stack para o gerenciamento de consultas veterinárias. A aplicação deve conter duas telas principais: uma para exibir uma lista de pets e outra para o cadastro de novos pets.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Requisitos do Front-End
+- **Tecnologia:** O front-end deve ser desenvolvido em React (para web) ou React Native (para mobile), a critério do desenvolvedor.
+- **Tela de Listagem:**
+  - Renderizar uma lista de pets obtidos através de uma chamada ao endpoint GET do back-end.
+  - Cada item da lista deve exibir pelo menos um nome e uma descrição.
+- **Tela de Cadastro:**
+  - Formulário para adicionar novos pets, contendo pelo menos campos para nome e tipo.
+  - Botão para enviar os dados do formulário para o endpoint POST do back-end.
+  - Após o envio bem-sucedido, o usuário deve ser redirecionado para a tela de listagem.
 
-## Expanding the ESLint configuration
+### Requisitos do Back-End
+- **Tecnologia:** O back-end deve ser desenvolvido em Java, utilizando o framework Spring Boot.
+- **Endpoints:**
+   - **GET /pets**: Retorna a lista de pets cadastrados.
+   - **POST /pets**: Recebe os dados do formulário e adiciona um novo pet à lista. O pet pode ter uma imagem associada.
+   - **GET /consultas/pet/{petId}**: Retorna a lista de consultas associadas a um pet específico.
+   - **POST /consultas**: Adiciona uma nova consulta para um pet específico.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Critérios de Avaliação
+1. **Funcionalidade:** A aplicação deve cumprir todos os requisitos funcionais descritos acima.
+2. **Usabilidade:** A interface deve ser intuitiva e fácil de usar.
+3. **Código:** O código deve ser bem estruturado e organizado.
+4. **Boas Práticas:** Adoção de boas práticas de desenvolvimento tanto no front-end quanto no back-end.
 
-- Configure the top-level `parserOptions` property like this:
+## :hammer_and_wrench: Tecnologias Utilizadas
+<ul>
+  <li>Java 17</li>
+  <li>Spring Boot</li>
+  <li>Spring Data JPA</li>
+  <li>H2 Database</li>
+  <li>React</li>
+  <li>Maven</li>
+  <li>Postman (para testes)</li>
+</ul>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## :dart: Endpoints
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Pets
+- **GET /pets**: Retorna a lista de pets cadastrados.
+- **POST /pets**: Recebe os dados do formulário e adiciona um novo pet à lista. O pet pode ter uma imagem associada.
+
+### Consultas
+- **GET /consultas/pet/{petId}**: Retorna a lista de consultas associadas a um pet específico.
+- **POST /consultas**: Adiciona uma nova consulta para um pet específico.
+
+## 👀 Autor do projeto
+
+Leandro Tilio - [LTilio](https://github.com/LTilio)
+
+  
