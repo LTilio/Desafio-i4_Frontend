@@ -1,10 +1,9 @@
-// src/components/PetCard.tsx
 import React, { useEffect, useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import { getAllPets } from "../../api/pets";
 import { PetDto } from "../../types/types";
-import "./PetCard.css";
 import { useNavigate } from "react-router-dom";
+import "./PetCard.css";
 
 const PetCard: React.FC = () => {
   const [pets, setPets] = useState<PetDto[]>([]);
@@ -48,7 +47,7 @@ const PetCard: React.FC = () => {
                   <strong>Contato do Dono:</strong> {pet.contatoDono} <br />
                 </Card.Text>
               </Card.Body>
-              <div className="button-container">
+              <div className="button-container-pet">
                 <button
                   className="custom-button"
                   onClick={() => handleProfileClick(pet.id)}

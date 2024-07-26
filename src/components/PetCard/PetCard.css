@@ -38,7 +38,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #333;
-    margin-bottom: 0.5rem;
+
 }
 
 .card-idade {
@@ -87,14 +87,13 @@
         flex-wrap: wrap;
     }
 
-    .button-container {
+    .button-container-pet {
         position: static;
-        width: 100%;
+        width: 80%;
         padding-top: 60px;
     }
 
     .custom-button {
-        display: block;
-        width: 100%;
+        width: 90%;
     }
 }

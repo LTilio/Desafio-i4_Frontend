@@ -7,10 +7,6 @@ import "./NavBar.css";
 const NavBar: React.FC = () => {
   const navigate = useNavigate();
 
-  const handleNavigate = () => {
-    navigate("/pets/new");
-  };
-
   return (
     <Navbar className="custom-navbar" expand="lg">
       <Navbar.Brand>
@@ -18,8 +14,10 @@ const NavBar: React.FC = () => {
           <img src={imgLogo} alt="imagem da logo" className="logo-img" />
         </Link>
       </Navbar.Brand>
-      <Navbar.Brand className="ml-auto" onClick={handleNavigate}>
-        <Button variant="primary">Cadastrar Novo Pet</Button>
+      <Navbar.Brand className="ml-auto">
+        <Button variant="primary" onClick={() => navigate("/cadastro-pet")}>
+          Cadastrar Novo Pet
+        </Button>
       </Navbar.Brand>
     </Navbar>
   );

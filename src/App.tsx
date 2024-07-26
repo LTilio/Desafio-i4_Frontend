@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
 import PetProfile from "./pages/PetProfile";
+import CadastroPet from "./pages/CadastroPet";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/cadastro-pet" element={<CadastroPet />} />
             <Route path="/profile/:petId" element={<PetProfile />} />
           </Routes>
         </main>

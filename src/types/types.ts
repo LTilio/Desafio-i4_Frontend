@@ -23,3 +23,16 @@ export interface PetDto {
   imagemUrl?: string;
   consultas?: ConsultaDto[];
 }
+
+export type PetFormValues = {
+  nome: string;
+  especie: string;
+  raca?: string;
+  idade: number;
+  peso: number;
+  corPelagem?: string;
+  observacoes?: string;
+  nomeDono?: string;
+  contatoDono?: string;
+  imagem?: File | null;
+};
