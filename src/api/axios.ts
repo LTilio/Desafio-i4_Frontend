@@ -6,3 +6,7 @@ export const api = axios.create({
       'Content-Type': 'application/json',
     },
   });
+
+  export const apiFormData = axios.create({
+    baseURL: 'http://localhost:8080', 
+  });
