@@ -6,7 +6,6 @@
     --color-dark-grey: #333;
 }
 
-/* Container principal do formulário */
 .form-container {
     width: 80%;
     margin: auto;
@@ -16,7 +15,6 @@
     margin-bottom: 2rem;
 }
 
-/* Título do formulário */
 .form-title {
     text-align: center;
     font-size: 2rem;
@@ -28,12 +26,10 @@
     border-bottom: #dddddd solid 0.5px;
 }
 
-/* Estilo das seções do formulário */
 .form-section {
     margin-bottom: 1rem;
 }
 
-/* Estilo dos rótulos */
 .form-label {
     margin-top: 30px;
     display: block;
@@ -41,7 +37,6 @@
     color: var(--color-grey11);
 }
 
-/* Estilo dos campos de entrada */
 .form-control {
     width: 100%;
     padding: 0.75rem;
@@ -50,7 +45,6 @@
     box-sizing: border-box;
 }
 
-/* Estilo dos campos de seleção */
 .form-select {
     width: 100%;
     padding: 0.75rem;
@@ -59,16 +53,15 @@
     box-sizing: border-box;
 }
 
-/* Estilo das mensagens de erro */
 .invalid-feedback {
     color: #dc3545;
     font-size: 0.875rem;
 }
 
-/* Estilo do botão de selecionar arquivo */
 .file-input-container {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -84,7 +77,6 @@
     display: inline-block;
 }
 
-/* Ocultar o campo de arquivo real */
 .file-input {
     position: fixed;
     width: 100%;
@@ -93,7 +85,6 @@
     cursor: pointer;
 }
 
-/* Estilo da imagem de pré-visualização */
 .image-preview {
     padding: 20px;
     width: 200px;
@@ -127,7 +118,6 @@
     box-shadow: 0 4px 15px var(--color-dark-green);
 }
 
-/* Estilo do container dos botões */
 .button-container {
     display: flex;
     justify-content: center;
@@ -135,7 +125,6 @@
     margin: auto;
 }
 
-/* Estilo para inputs e selects em foco */
 .form-control:focus,
 .form-select:focus {
     border-color: var(--color-dark-green);
