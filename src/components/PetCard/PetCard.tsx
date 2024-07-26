@@ -23,6 +23,8 @@ const PetCard: React.FC = () => {
   }, []);
 
   const handleProfileClick = (petId: number) => {
+    console.log(petId);
+
     navigate(`/profile/${petId}`);
   };
 

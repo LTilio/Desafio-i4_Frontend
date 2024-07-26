@@ -1,0 +1,120 @@
+/* PetProfileCard.css */
+
+.pet-profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    padding-top: 30px;
+    border-bottom: #dddddd solid 0.5px;
+}
+
+.pet-profile-header {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    border-bottom: #dddddd solid 0.5px;
+}
+
+.pet-profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.pet-profile-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pet-profile-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.pet-profile-age {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #555;
+    padding-bottom: 0.5rem;
+}
+
+.pet-profile-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.pet-profile-text strong {
+    color: #333;
+}
+
+/* Container para as consultas veterinárias */
+.pet-consultations-section {
+    margin-top: 2rem;
+}
+
+/* Título da seção de consultas veterinárias */
+.pet-consultations-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/* Cartão de consultas veterinárias */
+.pet-consultation-card {
+    width: 80%;
+    margin: auto;
+    border: 1px solid var(--color-dark-green);
+    border-radius: 8px;
+    padding: 1rem;
+    /* background-color: #f9f9f9; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+/* Corpo do cartão de consulta */
+.pet-consultation-card .card-body {
+    padding: 1rem;
+}
+
+/* Título dentro do cartão de consulta */
+.pet-consultation-card .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Texto dentro do cartão de consulta */
+.pet-consultation-card .card-text {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+/* Texto em negrito dentro do cartão de consulta */
+.pet-consultation-card .card-text strong {
+    color: #333;
+}
+
+
+
+@media (max-width: 768px) {
+    .pet-profile-card {
+        width: 90%;
+        padding-top: 60px;
+    }
+
+}

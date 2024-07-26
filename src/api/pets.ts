@@ -23,3 +23,13 @@ export const addPet = async (formData: FormData) => {
     throw error;
   }
 };
+
+export const getPetById = async (id: number): Promise<PetDto> => {
+  try {
+    const response = await api.get<PetDto>(`${API_URL}/${id}`);
+    return response.data;
+  } catch (error) {
+    console.error(`Erro ao obter pet com id ${id}:`, error);
+    throw error;
+  }
+};
